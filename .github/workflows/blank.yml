@@ -4,16 +4,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello world
+      - name: Build
         run: |
           echo "welcome to github actions"
           echo "welcome second line"
   test:
     runs-on: ubuntu-latest
     steps:
+      name: Test
       run: echo "Test stage"
 
   deploy:
     runs-on: ubuntu-latest
     steps:
+      name: Deploy
       run: echo "Deploy stage"
