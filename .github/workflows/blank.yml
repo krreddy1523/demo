@@ -16,7 +16,7 @@ jobs:
         run: echo "Test stage"
   deploy:
     runs-on: ubuntu-latest
-    nedds: test
+    needs: test
     steps:
       - name: Deploy
         run: echo "Deploy stage"
