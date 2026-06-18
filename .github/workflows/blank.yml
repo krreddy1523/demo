@@ -11,11 +11,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      name: Test
+      - name: Test
       run: echo "Test stage"
-
   deploy:
     runs-on: ubuntu-latest
     steps:
-      name: Deploy
+      - name: Deploy
       run: echo "Deploy stage"
