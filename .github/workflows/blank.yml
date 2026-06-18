@@ -10,13 +10,13 @@ jobs:
           echo "welcome second line"
   test:
     runs-on: ubuntu-latest
-    needs: build
+    needs: deploy
     steps:
       - name: Test
         run: echo "Test stage"
   deploy:
     runs-on: ubuntu-latest
-    needs: test
+    needs: build
     steps:
       - name: Deploy
         run: echo "Deploy stage"
