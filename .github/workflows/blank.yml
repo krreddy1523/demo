@@ -1,10 +1,19 @@
 name: git actions demo
 on: workflow_dispatch
 jobs:
-  hello:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Hello world
         run: |
           echo "welcome to github actions"
           echo "welcome second line"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      run: echo "Test stage"
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      run: echo "Deploy stage"
